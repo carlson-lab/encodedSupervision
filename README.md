@@ -43,8 +43,11 @@ Once again a model is trained and projected with the same commands as above. Get
 Projecting the data using the transform method is simple while the original python session is open. However, once you exit the program, projecting new data in a different session is more difficult. The model is saved in a directory defined by self.dirname and self.name. To project the data in tensorflow it requires reloading the variables created in the TF session which are saved under strange names and difficult to access. From your perspective the simple procedure for backprojecting the data is 
 
 (1) Create a new CSFA model with whatever parameters you wish.
+
 (2) Make sure dirName and name match the names you used for the old model
+
 (3) Make sure you are in the same directory
+
 (4) Now use the transform method.
 
 I apologize but this weird procedure is unavoidable based on the architecture of TF 1.0
